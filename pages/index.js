@@ -1,9 +1,14 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import React from 'react'
-import styles from '../styles/Home.module.css'
-import {AiFillLinkedin, AiFillInstagram, AiFillGithub} from 'react-icons/ai'
-
+import Head from 'next/head';
+import Image from 'next/image';
+import React from 'react';
+import styles from '../styles/Home.module.css';
+import { AiFillLinkedin, AiFillInstagram, AiFillGithub } from 'react-icons/ai';
+import { FiCamera, FiEdit, FiBox } from 'react-icons/fi';
+import design from '../public/BankApp.png';
+import Api from '../public/MapApp.png';
+import game from '../public/piggame.png';
+import camera from '../public/camera.png';
+import { useState } from 'react';
 
 export default function Home() {
   return (
@@ -14,45 +19,47 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='bg-white px-10'>
-        <section className='min-h-screen'>
-          <nav className='py-10 mb-12 flex justify-between'>
-          <h1 className='text-xl'>NitinSingh</h1>
-          <ul className='flex items-center'>
-            <li className='p-1 bg-cyan-500 text-white px-4 py-2 rounded-md ml-8'>
-              Home
-            </li>
-            <li className='p-1 bg-cyan-500 text-white px-4 py-2 rounded-md ml-8'>About</li>
-            <li className='p-1 bg-cyan-500 text-white px-4 py-2 rounded-md ml-8'>Project</li>
-            <li className='p-1 bg-cyan-500 text-white px-4 py-2 rounded-md ml-8'><a href="#">Contact</a></li>
-          </ul>
+      <main className="  px-10 md:px-20 lg:px-40">
+        <section className="min-h-screen">
+          <nav className="py-10 pl-64 mb-12 rounded-md  items-center justify-between">
+            <ul className="flex items-center">
+              <li className="p-1 px-4 py-2 text-2xl font-medium  rounded-md ml-8">
+                Home
+              </li>
+              <li className="p-1  px-4 py-2 text-2xl font-medium rounded-md ml-8">
+                About
+              </li>
+              <li className="p-1  px-4 py-2 text-2xl font-medium rounded-md ml-8">
+                Project
+              </li>
+              <li className="p-1  px-4 py-2 text-2xl font-medium rounded-md ml-8">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
           </nav>
-          <div className='text-center p-10'> 
-            <h2 className='text-5xl text-teal-600 font-medium'>Nitin Singh Chauhan</h2>
-            <h3 className='text-2xl py-2'>Developer, Designer and Photographer</h3>
-            <p className='text-md py-5 leading-8 text-gray-800'>Freelancer providing services for programming needs like web developement and many more <a href="#" className='text-teal-500'>Contact Me</a></p>
+          <div className="relative mx-auto bg-gradient-to-b from-pale rounded-xl w-180 h-80 m-20 overflow-hidden md:h-96 md:w-196 text-center p-10">
+            <h2 className="text-5xl text-darkpale font-medium md:text-6xl">
+              Nitin Singh Chauhan
+            </h2>
+            <h3 className="text-2xl text-winter py-2 md:text-3xl">
+              Developer, Designer and Photographer
+            </h3>
+            <p className="text-md py-5 leading-8 text-teal md:text-xl max-w-xl mx-auto">
+              Freelancer providing services for programming needs like web
+              developement and many more{' '}
+              <a href="#" className="text-teal-500">
+                Contact Me
+              </a>
+            </p>
           </div>
-          <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
-              <AiFillGithub />
-              <AiFillInstagram />
-              <AiFillLinkedin />
-          </div>
-          <div className='relative mx-auto bg-gradient-to-b from-blue-500 rounded-md w-80 h-80 m-20 overflow-hidden'>
-            
+          <div className="text-5xl flex justify-center gap-16 py-10 text-gray-600 m">
+            <AiFillGithub />
+            <AiFillInstagram />
+            <AiFillLinkedin />
           </div>
           {/*  */}
         </section>
-        <section>
-          <div>
-            <h3 className='text-3xl py-1'>About</h3>
-            <p className='text-md py-5 leading-8 text-gray-800'>I am an International Student from India at Georgian Collage right now and continuing my education in  computer programming I have learned many langugaes like swift, java, c++,c#,Javascript, mainframe 
-              I have learn full stack development with MERN/MEAN stack. I am learning new technologies day by day to improve my self daily basis. 
-            </p>
-          </div>
-        </section>
       </main>
-
-   
     </div>
-  )
+  );
 }
