@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
 import styles from '../styles/Home.module.css'
-import {AiFillLinkedin, AiFilledIndeed} from 'react-icons'
+import {AiFillLinkedin, AiFillInstagram, AiFillGithub} from 'react-icons/ai'
 
 
 export default function Home() {
@@ -19,18 +19,35 @@ export default function Home() {
           <nav className='py-10 mb-12 flex justify-between'>
           <h1 className='text-xl'>NitinSingh</h1>
           <ul className='flex items-center'>
-            <li className='p-1'>
+            <li className='p-1 bg-cyan-500 text-white px-4 py-2 rounded-md ml-8'>
               Home
             </li>
-            <li className='p-1'>About</li>
-            <li className='p-1'>Project</li>
-            <li className='p-1'><a href="#">Contact</a></li>
+            <li className='p-1 bg-cyan-500 text-white px-4 py-2 rounded-md ml-8'>About</li>
+            <li className='p-1 bg-cyan-500 text-white px-4 py-2 rounded-md ml-8'>Project</li>
+            <li className='p-1 bg-cyan-500 text-white px-4 py-2 rounded-md ml-8'><a href="#">Contact</a></li>
           </ul>
           </nav>
           <div className='text-center p-10'> 
             <h2 className='text-5xl text-teal-600 font-medium'>Nitin Singh Chauhan</h2>
             <h3 className='text-2xl py-2'>Developer, Designer and Photographer</h3>
-            <p className='text-md py-5 leading-8 text-gray-800'>Freelancer providing services for programming needs like web developement and many more <a href="#">Contact Me</a></p>
+            <p className='text-md py-5 leading-8 text-gray-800'>Freelancer providing services for programming needs like web developement and many more <a href="#" className='text-teal-500'>Contact Me</a></p>
+          </div>
+          <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
+              <AiFillGithub />
+              <AiFillInstagram />
+              <AiFillLinkedin />
+          </div>
+          <div className='relative mx-auto bg-gradient-to-b from-blue-500 rounded-md w-80 h-80 m-20 overflow-hidden'>
+            
+          </div>
+          {/*  */}
+        </section>
+        <section>
+          <div>
+            <h3 className='text-3xl py-1'>About</h3>
+            <p className='text-md py-5 leading-8 text-gray-800'>I am an International Student from India at Georgian Collage right now and continuing my education in  computer programming I have learned many langugaes like swift, java, c++,c#,Javascript, mainframe 
+              I have learn full stack development with MERN/MEAN stack. I am learning new technologies day by day to improve my self daily basis. 
+            </p>
           </div>
         </section>
       </main>
