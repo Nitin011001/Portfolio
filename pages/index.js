@@ -27,10 +27,10 @@ export default function Home() {
                 Home
               </li>
               <li className="p-1  px-4 py-2 text-2xl font-medium rounded-md ml-8">
-                About
+                <a href="./aboutTemplate.js">About</a>
               </li>
               <li className="p-1  px-4 py-2 text-2xl font-medium rounded-md ml-8">
-                Project
+                <a href="./projectTemplate.js">Project</a>
               </li>
               <li className="p-1  px-4 py-2 text-2xl font-medium rounded-md ml-8">
                 <a href="#">Contact</a>
